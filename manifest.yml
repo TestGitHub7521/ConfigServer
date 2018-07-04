@@ -1,0 +1,9 @@
+applications:
+- name: configclient
+  disk_quota: 1G
+  instances: 1
+  memory: 1G
+  routes:
+  - route: configclientdemo-sample.cfapps.io/message
+  stack: cflinuxfs2
+  path: /target/configclientdemo-0.0.1-SNAPSHOT.jar
